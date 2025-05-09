@@ -1,8 +1,6 @@
 package P2_add_two_numbers;
 
-
- 
- 
+import java.math.BigInteger;
 
 public class P2_add_two_numbers {
     public ListNode add_two_numbers(ListNode l1,ListNode l2){
@@ -41,10 +39,12 @@ for(int i=0;i<101;i++){
            //string reverse end
         System.out.println("here"+reversedll2);
         System.out.println("here"+reversedll1);
-        int numl1 = Integer.parseInt(reversedll1);
-        int numl2 = Integer.parseInt(reversedll2);
 
-    int result=numl1+numl2;
+BigInteger numl1 = new BigInteger(reversedll1);
+BigInteger numl2 = new BigInteger(reversedll2);
+
+
+BigInteger result = numl1.add(numl2);
     String resultt = String.valueOf(result);
     System.out.println("result"+resultt);//till here correct
     String reversedresult = "";
